@@ -19,3 +19,9 @@
   width: 30px;
   height: 3px;
 }
+
+@media (min-width: 769px) {
+  .toggle-button_line{
+    display: none;
+  }
+}

@@ -44,3 +44,14 @@
 .toolbar_logo{
   margin-left: 1rem;
 }
+
+@media (max-width: 768px) {
+  .toolbar_navigation-items{
+    display: none;
+  }
+
+}
+@media (min-width: 769px) {
+.toolbar_logo{
+  margin-left: -40px;
+}}

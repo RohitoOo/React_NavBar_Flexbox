@@ -6,7 +6,7 @@ import MenuComponent from './components/menuComponent'
 import Toolbar from './components/Toolbar/Toolbar'
 import SideDrawer from './components/SideDrawer/SideDrawer'
 import BackDrop from './components/BackDrop/BackDrop'
-
+import Images from './components/Images/Images'
 
 class App extends Component {
 
@@ -49,7 +49,11 @@ if(this.state.SideDrawerOpen){
             marginTop: '60px'
           }}>
 
-                <p>This is the page content</p>
+                <p>
+
+                  <Images/>
+
+                </p>
 
           </main>
 
