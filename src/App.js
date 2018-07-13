@@ -31,11 +31,11 @@ backDropClickHandler = () => {
 }
 
   render() {
-    let sideDrawer;
+    // let sideDrawer;
     let backDrop;
 
 if(this.state.SideDrawerOpen){
-  sideDrawer = <SideDrawer />
+  // sideDrawer = <SideDrawer />
   backDrop = <BackDrop click={this.backDropClickHandler}/>
 }
 
@@ -43,7 +43,7 @@ if(this.state.SideDrawerOpen){
       <div style={{ height: '100%'}}>
 
           <Toolbar  drawerClickHandler={this.drawerToggleClickHandler} />
-          {sideDrawer}
+          <SideDrawer show={this.state.SideDrawerOpen} />
           {backDrop}
           <main style={{
             marginTop: '60px'

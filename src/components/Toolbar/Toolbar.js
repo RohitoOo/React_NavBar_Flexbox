@@ -8,12 +8,12 @@ const toolbar = props => (
 
     <nav className='toolbar_navigation'>
       <div> <DrawerToggleButton click={props.drawerClickHandler}/> </div>
-      <div className='toolbar_logo'><a href="/" >THE LOGO</a> </div>
+      <div className='toolbar_logo'><a href="http://www.rohito.com/" target="_blank" >THE LOGO</a> </div>
       <div className='spacer'/>
         <div className="toolbar_navigation-items">
           <ul>
-            <li><a href='/'>Products</a></li>
-            <li><a href='/'>Users</a></li>
+            <li><a href='http://www.rohito.com/' target="_blank">Products</a></li>
+            <li><a href='http://www.rohito.com/' target="_blank">Users</a></li>
           </ul>
         </div>
     </nav>
