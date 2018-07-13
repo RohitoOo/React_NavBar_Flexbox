@@ -12,6 +12,14 @@ class App extends Component {
       <div className="App">
 
           <Toolbar/>
+          <main style={{
+            marginTop: '60px'
+          }}>
+
+                <p>This is the page content</p>
+
+          </main>
+
 
       </div>
     );
