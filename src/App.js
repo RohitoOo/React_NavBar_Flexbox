@@ -4,14 +4,18 @@ import './App.css';
 import WrapperComponent from './components/wrapperComponent'
 import MenuComponent from './components/menuComponent'
 import Toolbar from './components/Toolbar/Toolbar'
+import SideDrawer from './components/SideDrawer/SideDrawer'
+import BackDrop from './components/BackDrop/BackDrop'
 
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div style={{ height: '100%'}}>
 
           <Toolbar/>
+            <SideDrawer/>
+              <BackDrop/>
           <main style={{
             marginTop: '60px'
           }}>

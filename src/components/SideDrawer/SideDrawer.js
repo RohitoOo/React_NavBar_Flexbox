@@ -1,9 +1,10 @@
-import React from 'react';
+import React from 'react'
 
+import './SideDrawer.css'
 
 const SideDrawer = props => (
 
-  <nav>
+  <nav className='side-drawer'>
     <ul>
       <li >
         <a href="/">Products</a>
@@ -15,3 +16,5 @@ const SideDrawer = props => (
   </nav>
 
 )
+
+export default SideDrawer;
