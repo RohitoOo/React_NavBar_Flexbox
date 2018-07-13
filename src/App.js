@@ -9,13 +9,42 @@ import BackDrop from './components/BackDrop/BackDrop'
 
 
 class App extends Component {
+
+  state = {
+    SideDrawerOpen : false
+  };
+
+drawerToggleClickHandler = () => {
+
+  this.setState( (prevState) => {
+    return {SideDrawerOpen : !prevState.SideDrawerOpen}
+  });
+
+}
+
+
+backDropClickHandler = () => {
+
+    this.setState( {
+      SideDrawerOpen : false
+    })
+}
+
   render() {
+    let sideDrawer;
+    let backDrop;
+
+if(this.state.SideDrawerOpen){
+  sideDrawer = <SideDrawer />
+  backDrop = <BackDrop click={this.backDropClickHandler}/>
+}
+
     return (
       <div style={{ height: '100%'}}>
 
-          <Toolbar/>
-            <SideDrawer/>
-              <BackDrop/>
+          <Toolbar  drawerClickHandler={this.drawerToggleClickHandler} />
+          {sideDrawer}
+          {backDrop}
           <main style={{
             marginTop: '60px'
           }}>
